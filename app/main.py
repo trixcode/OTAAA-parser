@@ -3,6 +3,9 @@ from app.routes import data_routes
 from pydantic import BaseModel
 import requests
 from typing import List
+from fake_useragent import UserAgent
+
+ua = UserAgent()
 
 class Ticket(BaseModel):
     tl_event_id: str
@@ -29,9 +32,10 @@ app.include_router(data_routes.router)
 @app.get("/get-event/{event_id}", response_model=EventResponse)
 def get_event_tickets(event_id: str):
     url = f"https://fomenki.ru/boxoffice/get/?event={event_id}"
+    headers = {"User-Agent": ua.random}
 
     try:
-        response = requests.get(url, timeout=(30, 120))
+        response = requests.get(url, headers=headers)
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
         return {"status": "error", "message": str(e)}

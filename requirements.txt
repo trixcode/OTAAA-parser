@@ -4,3 +4,4 @@ celery
 redis
 requests
 beautifulsoup4
+fake-useragent
