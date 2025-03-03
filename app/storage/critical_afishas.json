@@ -1,0 +1,232 @@
+[
+    {
+        "title": "Пугачёв",
+        "link": "https://fomenki.ru/performance/pugachov/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Совершенно Невероятное Событие (Женитьба в 2‑х действиях)",
+        "link": "https://fomenki.ru/performance/marriage/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Безумная из Шайо",
+        "link": "https://fomenki.ru/performance/chaillot2013/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Бесприданница",
+        "link": "https://fomenki.ru/performance/bespridannitsa/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Война и мир. Начало романа",
+        "link": "https://fomenki.ru/performance/warandpeace/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Волки и овцы",
+        "link": "https://fomenki.ru/performance/wolves2023/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Двадцать третий",
+        "link": "https://fomenki.ru/performance/remark/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Египетские ночи",
+        "link": "https://fomenki.ru/performance/egypt_nights/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Король Лир",
+        "link": "https://fomenki.ru/performance/king_lear/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "К 90‑летию Петра Фоменко. «Комедия о трагедии»",
+        "link": "https://fomenki.ru/performance/godunov/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Мастер и Маргарита",
+        "link": "https://fomenki.ru/performance/master/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Семейное счастие",
+        "link": "https://fomenki.ru/performance/family/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Сон в летнюю ночь",
+        "link": "https://fomenki.ru/performance/dream/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Чайка",
+        "link": "https://fomenki.ru/performance/seagull/",
+        "hall_code": "HB-1"
+    },
+    {
+        "title": "Алиса в Зазеркалье",
+        "link": "https://fomenki.ru/performance/alice/",
+        "hall_code": "HB-2"
+    },
+    {
+        "title": "Вишневый сад",
+        "link": "https://fomenki.ru/performance/cherryorchard/",
+        "hall_code": "HB-3"
+    },
+    {
+        "title": "Молли Суини",
+        "link": "https://fomenki.ru/performance/mollysweeney/",
+        "hall_code": "HB-3"
+    },
+    {
+        "title": "Завещание Чарльза Адамса, или Дом семи повешенных",
+        "link": "https://fomenki.ru/performance/adams/",
+        "hall_code": "HB-4"
+    },
+    {
+        "title": "Театральный роман (Записки покойника)",
+        "link": "https://fomenki.ru/performance/theatre/",
+        "hall_code": "HB-5"
+    },
+    {
+        "title": "...Души",
+        "link": "https://fomenki.ru/performance/dushi/",
+        "hall_code": "HM-1"
+    },
+    {
+        "title": "Мой Брель",
+        "link": "https://fomenki.ru/performance/brel/",
+        "hall_code": "HM-2"
+    },
+    {
+        "title": "Новогоднее приключение Маши и Вити",
+        "link": "https://fomenki.ru/performance/mashavitya/",
+        "hall_code": "HM-1"
+    },
+    {
+        "title": "Руслан и Людмила",
+        "link": "https://fomenki.ru/performance/lukomorie/",
+        "hall_code": "HM-1"
+    },
+    {
+        "title": "Триптих",
+        "link": "https://fomenki.ru/performance/triptych/",
+        "hall_code": "HM-2"
+    },
+    {
+        "title": "Путешествие в театральную страну",
+        "link": "https://fomenki.ru/notperformance/theatre_lectures/",
+        "hall_code": "HM-3"
+    },
+    {
+        "title": "Рыцарь. Моцарт. Пир",
+        "link": "https://fomenki.ru/performance/little_tragedies/",
+        "hall_code": "HF"
+    },
+    {
+        "title": "Божественная комедия. Вариации",
+        "link": "https://fomenki.ru/performance/divinecomedy/",
+        "hall_code": "CZ-1"
+    },
+    {
+        "title": "Lёгкое Dыхание",
+        "link": "https://fomenki.ru/performance/lightbreath/",
+        "hall_code": "CZ-2"
+    },
+    {
+        "title": "Мамаша Кураж",
+        "link": "https://fomenki.ru/performance/courage/",
+        "hall_code": "CZ-2"
+    },
+    {
+        "title": "Египетская марка",
+        "link": "https://fomenki.ru/performance/egypt_stamp/",
+        "hall_code": "CZ-3"
+    },
+    {
+        "title": "Подарок",
+        "link": "https://fomenki.ru/performance/gift/",
+        "hall_code": "CZ-4"
+    },
+    {
+        "title": "Опасные связи",
+        "link": "https://fomenki.ru/performance/dangerous/",
+        "hall_code": "CZ-5"
+    },
+    {
+        "title": "Рыжий",
+        "link": "https://fomenki.ru/performance/ryzhij/",
+        "hall_code": "CZ-1"
+    },
+    {
+        "title": "Сказка Арденнского леса",
+        "link": "https://fomenki.ru/performance/ardenn/",
+        "hall_code": "CZ-7"
+    },
+    {
+        "title": "Школа жён",
+        "link": "https://fomenki.ru/performance/lecoledesfemmes/",
+        "hall_code": "CZ-8"
+    },
+    {
+        "title": "Светлые души, или О том, как написать рассказ",
+        "link": "https://fomenki.ru/performance/brightsouls/",
+        "hall_code": "CC-1"
+    },
+    {
+        "title": "Заходите-заходите",
+        "link": "https://fomenki.ru/performance/welcome/",
+        "hall_code": "CC-1"
+    },
+    {
+        "title": "Маякосвкий. Послушайте",
+        "link": "https://fomenki.ru/performance/mayakovsky/",
+        "hall_code": "CC-1"
+    },
+    {
+        "title": "Последние свидания",
+        "link": "https://fomenki.ru/performance/latedate/",
+        "hall_code": "CC-1"
+    },
+    {
+        "title": "В гостях у барона Мюнхгаузена",
+        "link": "https://fomenki.ru/performance/munchausen/",
+        "hall_code": "CC-2"
+    },
+    {
+        "title": "Он был титулярный советник",
+        "link": "https://fomenki.ru/performance/poprischin/",
+        "hall_code": "CC-3"
+    },
+    {
+        "title": "Самое важное",
+        "link": "https://fomenki.ru/performance/mostimportant/",
+        "hall_code": "CC-3"
+    },
+    {
+        "title": "Смешной человек",
+        "link": "https://fomenki.ru/performance/ridiculousman/",
+        "hall_code": "CC-3"
+    },
+    {
+        "title": "Фантазии Фарятьева",
+        "link": "https://fomenki.ru/performance/faryatiev/",
+        "hall_code": "CC-3"
+    },
+    {
+        "title": "Чающие движения воды",
+        "link": "https://fomenki.ru/performance/watermovements/",
+        "hall_code": "CC-3"
+    },
+    {
+        "title": "Серёжа очень тупой",
+        "link": "https://fomenki.ru/performance/seryozha/",
+        "hall_code": "CC-4"
+    }
+]

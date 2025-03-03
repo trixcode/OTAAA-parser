@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    command: |
+      uvicorn app.main:app --reload --host 0.0.0.0 & \
+      celery -A app.worker.tasks worker --loglevel=info  # запускаем celery в контейнере app
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - CELERY_TIMEZONE=UTC
+    depends_on:
+      - redis
+    ports:
+      - "8000:8000"
+    restart: on-failure
+
+  redis:
+    image: "redis:latest"
+    container_name: "redis"
+    ports:
+      - "6379:6379"
+    restart: always
