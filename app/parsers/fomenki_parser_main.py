@@ -137,9 +137,30 @@ def fetch_data_for_month(year, month):
 
 
 def get_main_data():
-    print('asdadasd')
+    current_date = datetime.now()
+    year, month = current_date.year, current_date.month
+    all_events = []
+
+    while True:
+        monthly_events = fetch_data_for_month(year, month)
+
+        if monthly_events is None:
+            print("Прерываю выполнение из-за ошибки при запросе.")
+            break
+
+        if not monthly_events:
+            break
+
+        all_events.extend(monthly_events)
+        year, month = get_next_month(year, month)
+
+    future_events = [event for event in all_events if event['datetime'] >= current_date]
+
+    for event in future_events:
+        event['datetime'] = event['datetime'].isoformat()
+
     with open('app/storage/parser_events_data.json', 'w', encoding='utf-8') as jsonfile:
-        json.dump({"date": "sss"}, jsonfile, ensure_ascii=False, indent=4)
+        json.dump(future_events, jsonfile, ensure_ascii=False, indent=4)
 
     print('Данные успешно записаны.')
 
