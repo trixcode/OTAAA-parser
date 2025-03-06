@@ -2,7 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
+import random
+import time
+from fake_useragent import UserAgent
 
+ua = UserAgent()
 
 def get_next_month(year, month):
     if month == 12:
@@ -72,8 +76,9 @@ def fetch_data_for_month(year, month):
     ]
 
     url = f'https://fomenki.ru/timetable/{month:02d}-{year}/'
+    headers = {"User-Agent": ua.random}
     print(f'Запрашиваю данные с {url}')
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -153,6 +158,10 @@ def get_main_data():
 
         all_events.extend(monthly_events)
         year, month = get_next_month(year, month)
+
+        delay = random.uniform(3, 5)
+        print(f'Ожидание {delay:.2f} секунд перед следующим запросом...')
+        time.sleep(delay)
 
     future_events = [event for event in all_events if event['datetime'] >= current_date]
 

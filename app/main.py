@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from app.routes import data_routes
 from pydantic import BaseModel
 import requests
+import time
+import random
 from typing import List
 from fake_useragent import UserAgent
 
@@ -24,7 +26,7 @@ class EventResponse(BaseModel):
     eventId: str
     tickets: List[Ticket]
 
-app = FastAPI(title="Парсер API")
+app = FastAPI(title="Парсер API", root_path="/api/v1")
 
 app.include_router(data_routes.router)
 
@@ -33,6 +35,9 @@ app.include_router(data_routes.router)
 def get_event_tickets(event_id: str):
     url = f"https://fomenki.ru/boxoffice/get/?event={event_id}"
     headers = {"User-Agent": ua.random}
+    delay = random.uniform(3, 10)
+    print(f'Запрос к URL: {url}. Ожидание {delay} секунд.')
+    time.sleep(delay)
 
     try:
         response = requests.get(url, headers=headers)

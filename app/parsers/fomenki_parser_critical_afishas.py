@@ -2,9 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import time
+import random
 import re
 from datetime import datetime
+from fake_useragent import UserAgent
 
+ua = UserAgent()
 
 def get_event_year(event_date_str):
     current_year = datetime.now().year
@@ -79,10 +82,12 @@ def fomenki_parser_critical_afishas():
     for index, event_data in enumerate(events_data):
         try:
             url = event_data['link']
-            time.sleep(1)
-            print(f'Запрос к URL: {url}.')
-            response = requests.get(url, timeout=10)
-            time.sleep(2)
+            delay = random.uniform(3, 10)
+            print(f'Запрос к URL: {url}. Ожидание {delay} секунд.')
+            time.sleep(delay)
+
+            headers = {"User-Agent": ua.random}
+            response = requests.get(url, headers=headers, timeout=10)
 
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, 'html.parser')
